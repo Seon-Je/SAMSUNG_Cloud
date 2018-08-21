@@ -1,0 +1,6 @@
+lwiptest wifi B_CORECHIPS bcore00151
+lwiptest client 192.168.0.204 5050
+
+./a520_server 5050 &
+python a520_cloud_sendData.py &
+python a520_cloud_getAction.py & 
